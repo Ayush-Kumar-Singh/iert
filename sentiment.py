@@ -3,7 +3,9 @@ from spacytextblob.spacytextblob import SpacyTextBlob
 import json,urllib.request
 import streamlit as st
 import plotly.express as px
-import plotly.io as pio
+
+
+
 
 
 try:
@@ -19,7 +21,10 @@ output = json.loads(data)
 name = []
 volume = []
 ee = []
+ee2 = ['positive','negative']
 text = []
+
+
 for x in range(len(output['statuses'])):
 	if(output['statuses'][x]['text'] is not None):
 		
@@ -35,8 +40,12 @@ for x in range(len(output['statuses'])):
 			else:
 				ee.append("negative")
 
-
-fig = px.scatter_3d(x=name, y=ee,z=volume)
+ 
+# Random Data
+random_x = volume
+names = ee
+ 
+fig = px.pie(values=random_x, names=names,title='Sentimental Analysis Of Tweets')
 
 
 st.plotly_chart(fig)
