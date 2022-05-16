@@ -25,32 +25,27 @@ ee2 = ['positive','negative']
 text = []
 
 
-for x in range(len(output['statuses'])):
-	if(output['statuses'][x]['text'] is not None):
-		
-		doc = nlp(output['statuses'][x]['text'])
-		ayush = output['statuses'][x]['user']['name']
-		yy = doc._.subjectivity
-		if(yy > 0):
-			name.append(ayush)
-			volume.append(yy)
-			text.append(output['statuses'][x]['text'])
-			if(yy > 0.49):
-				ee.append("positive")
-			else:
-				ee.append("negative")
+x = 0
+
+while(x < len(output)):
+	doc = nlp(output[x][2])
+	yy = doc._.subjectivity
+	print(output[x][2])
+	x= x +1
+	volume.append(yy)
+	if(yy > 0.49):
+		ee.append("positive")
+	else:
+		ee.append("negative")
 
  
 # Random Data
 random_x = volume
 names = ee
  
-fig = px.pie(values=random_x, names=names,title='Sentimental Analysis Of Tweets')
+fig = px.pie(values=random_x, names=names,title='Ukraine War')
 
 
 st.plotly_chart(fig)
-
-st.write(name)
-st.write(text)
 
 		
