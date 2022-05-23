@@ -75,7 +75,7 @@ my_bar.empty()
 random_x = volume
 names = ee
  
-fig = px.pie(values=random_x, names=names,title='Sentimental Analysis Of Ukraine War Tweets')
+fig = px.pie(values=random_x, names=names,title=heading)
 
 st.plotly_chart(fig)
 
