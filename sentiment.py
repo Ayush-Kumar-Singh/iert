@@ -27,7 +27,7 @@ ee = []
 
 
 title = st.text_input('Find Sentiment', 'Ukraine War')
-heading = "Sentimental Analysis Of " + tile + " Tweets"
+heading = "Sentimental Analysis Of " + title + " Tweets"
 option = st.selectbox(
      'How would tweets do you want to analyze?',
      (100, 1000, 10000, 100000, 1000000))
