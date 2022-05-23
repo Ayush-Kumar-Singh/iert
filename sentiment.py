@@ -27,6 +27,7 @@ ee = []
 
 
 title = st.text_input('Find Sentiment', 'Ukraine War')
+heading = "Sentimental Analysis Of " + tile + " Tweets"
 option = st.selectbox(
      'How would tweets do you want to analyze?',
      (100, 1000, 10000, 100000, 1000000))
@@ -126,7 +127,7 @@ xaxis = ["January", "February", "March", "April", "May", "June", "July", "August
 st.balloons()
 st.write(len(xaxis),len(yaxis),len(posaxis),len(nueaxis))
 
-fig = px.line( x=xaxis, y=[yaxis,posaxis,nueaxis], title='Sentiment By Month', markers= True)
+fig = px.line( x=xaxis, y=[yaxis,posaxis,nueaxis], title=heading, markers= True)
 fig.update_layout(
     title="Sentimental Analysis By Month",
     xaxis_title="Month",
