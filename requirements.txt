@@ -1,4 +1,8 @@
+pandas==1.4.2
+pandas_stubs==1.2.0.56
 plotly==5.6.0
+snscrape==0.4.3.20220107.dev45+ged3ea94
 spacy==3.2.4
 spacytextblob==4.0.0
 streamlit==1.8.1
+vaderSentiment==3.3.2
