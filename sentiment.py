@@ -39,7 +39,7 @@ my_bar = st.progress(0)
 for i,tweet in enumerate(sntwitter.TwitterSearchScraper(title +' since:2021-01-01 until:2021-12-31').get_items()): #declare a username 
     if i>option:
         break
-    st.write(tweet.get_items())
+    st.write(tweet)
     tcontent.append(tweet.content)
     tusername.append(tweet.user.username)
     tid.append(tweet.id)
