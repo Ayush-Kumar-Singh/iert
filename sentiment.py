@@ -72,6 +72,7 @@ for i,tweet in enumerate(sntwitter.TwitterSearchScraper(title +' since:2021-01-0
     if(i % dev == 0):
         my_bar.progress(int(i/dev))
     tweets_list1.append([tweet.date, tweet.id, tweet.content, tweet.user.username, ccc, d.month,pos, neg, neu])
+ st.write(tweets_list1)
 
 
 my_bar.empty()
