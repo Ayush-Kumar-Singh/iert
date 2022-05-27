@@ -118,7 +118,7 @@ def listToString(s):
     return str1 
         
         
-w = listToString(words)        
+w = listToString(t.content)        
     
     
 
