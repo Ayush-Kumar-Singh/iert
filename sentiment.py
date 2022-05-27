@@ -114,7 +114,7 @@ Counter = Counter(tcontent)
 # input values and their respective counts.
 most_occur = Counter.most_common(4)
   
-print(most_occur)
+st.write(most_occur)
 
 
 while(month < 13):
