@@ -109,6 +109,9 @@ for t in tcontent:
     ayush = t.split()
     for a in ayush:
         words.append(a)
+st.write(words)        
+        
+        
     
     
 dictOfWords = { i : words[i] for i in range(0, len(words) ) }
