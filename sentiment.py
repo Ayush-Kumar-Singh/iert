@@ -107,10 +107,11 @@ nueaxis = []
 words=[]
 for t in tcontent:
     words.append(t.split())
+    st.write(words)
     
   
 # Pass the split_it list to instance of Counter class.
-Counter = Counter(tcontent)
+Counter = Counter(words)
   
 # most_common() produces k frequently encountered
 # input values and their respective counts.
