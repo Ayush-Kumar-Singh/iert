@@ -106,7 +106,9 @@ nueaxis = []
 # split() returns list of all the words in the string
 words=[]
 for t in tcontent:
-    words.append(t.split())
+    ayush = t.split()
+    for a in ayush:
+        words.append(a)
     
     
 dictOfWords = { i : words[i] for i in range(0, len(words) ) }
