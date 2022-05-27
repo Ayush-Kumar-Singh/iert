@@ -104,8 +104,10 @@ posaxis = []
 nueaxis = []
 
 # split() returns list of all the words in the string
-
-
+word=[]
+for t in tcontent:
+    words.append(t.split())
+    
   
 # Pass the split_it list to instance of Counter class.
 Counter = Counter(tcontent)
