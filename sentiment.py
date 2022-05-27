@@ -118,14 +118,14 @@ def listToString(s):
     return str1 
         
         
-listToString(words)        
+w = listToString(words)        
     
     
-dictOfWords = { i : words[i] for i in range(0, len(words) ) }
+
 
 
 # Pass the split_it list to instance of Counter class.
-Counter = Counter(dictOfWords)
+Counter = Counter(w)
   
 # most_common() produces k frequently encountered
 # input values and their respective counts.
