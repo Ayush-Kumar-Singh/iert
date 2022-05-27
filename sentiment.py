@@ -105,10 +105,10 @@ nueaxis = []
 
 # split() returns list of all the words in the string
 
-split_it = tweets_df1["Text"].split()
+
   
 # Pass the split_it list to instance of Counter class.
-Counter = Counter(split_it)
+Counter = Counter(tcontent)
   
 # most_common() produces k frequently encountered
 # input values and their respective counts.
