@@ -103,15 +103,22 @@ yaxis = []
 posaxis = []
 nueaxis = []
 
-# split() returns list of all the words in the string
-words=[]
-for t in tcontent:
-    ayush = t.split()
-    for a in ayush:
-        words.append(a)
-st.write(words)        
+ 
+
+def listToString(s): 
+    
+    # initialize an empty string
+    str1 = "" 
+    
+    # traverse in the string  
+    for ele in s: 
+        str1 += ele  
+    
+    # return string  
+    return str1 
         
         
+listToString(words)        
     
     
 dictOfWords = { i : words[i] for i in range(0, len(words) ) }
