@@ -103,7 +103,7 @@ yaxis = []
 posaxis = []
 nueaxis = []
   
-st.write(most_occur)
+
 
 
 while(month < 13):
