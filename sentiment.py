@@ -1,7 +1,7 @@
 def custom_legend_name(new_names):
     for i, new_name in enumerate(new_names):
         fig.data[i].name = new_name
-from collections import Counter
+
 import snscrape.modules.twitter as sntwitter
 import pandas as pd
 import json
@@ -102,36 +102,6 @@ month = 1
 yaxis = []
 posaxis = []
 nueaxis = []
-
- 
-
-def listToString(s): 
-    
-    # initialize an empty string
-    str1 = "" 
-    
-    # traverse in the string  
-    for ele in s: 
-        str1 += ele + "/"  
-    
-    # return string  
-    return str1 
-        
-        
-w = listToString(tcontent)        
-
-st.write(w)
-    
-    
-
-
-
-# Pass the split_it list to instance of Counter class.
-Counter = Counter(w)
-  
-# most_common() produces k frequently encountered
-# input values and their respective counts.
-most_occur = Counter.most_common(50)
   
 st.write(most_occur)
 
