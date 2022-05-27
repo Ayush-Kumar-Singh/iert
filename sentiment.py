@@ -109,9 +109,13 @@ for t in tcontent:
     words.append(t.split())
     
     
-  
+def Convert(lst):
+    res_dct = {lst[i]: lst[i + 1] for i in range(0, len(lst), 2)}
+    return res_dct
+
+w = Convert(words)
 # Pass the split_it list to instance of Counter class.
-Counter = Counter(words)
+Counter = Counter(w)
   
 # most_common() produces k frequently encountered
 # input values and their respective counts.
