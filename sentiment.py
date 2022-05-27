@@ -109,7 +109,7 @@ for t in tcontent:
     words.append(t.split())
     
     
-dictOfWords = { i : listOfStr[i] for i in range(0, len(words) ) }
+dictOfWords = { i : words[i] for i in range(0, len(words) ) }
 
 
 # Pass the split_it list to instance of Counter class.
