@@ -119,7 +119,7 @@ Counter = Counter(dictOfWords)
   
 # most_common() produces k frequently encountered
 # input values and their respective counts.
-most_occur = Counter.most_common(4)
+most_occur = Counter.most_common(10)
   
 st.write(most_occur)
 
