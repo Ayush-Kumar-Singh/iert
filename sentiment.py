@@ -40,10 +40,10 @@ for i,tweet in enumerate(sntwitter.TwitterSearchScraper(title +' since:2021-01-0
     if i>option:
         break
     # data to be printed    
-    '''st.write(tweet.content)
+    """st.write(tweet.content)
     st.write(tweet.user.username)
     st.write(tweet.id)
-    st.write(tweet.date)'''
+    st.write(tweet.date)"""
     tcontent.append(tweet.content)
     tusername.append(tweet.user.username)
     tid.append(tweet.id)
