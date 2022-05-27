@@ -87,7 +87,7 @@ fig = px.pie(values=random_x, names=names,title=heading)
 st.plotly_chart(fig)
 
 # split() returns list of all the words in the string
-split_it = data_set.split()
+split_it = tcontent.split()
   
 # Pass the split_it list to instance of Counter class.
 Counter = Counter(split_it)
