@@ -6,3 +6,4 @@ spacy==3.2.4
 spacytextblob==4.0.0
 streamlit==1.8.1
 vaderSentiment==3.3.2
+collections
