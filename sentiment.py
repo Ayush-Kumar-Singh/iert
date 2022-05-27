@@ -107,7 +107,7 @@ nueaxis = []
 words=[]
 for t in tcontent:
     words.append(t.split())
-    st.write(words)
+    
     
   
 # Pass the split_it list to instance of Counter class.
