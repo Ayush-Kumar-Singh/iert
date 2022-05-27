@@ -104,7 +104,7 @@ posaxis = []
 nueaxis = []
 
 # split() returns list of all the words in the string
-word=[]
+words=[]
 for t in tcontent:
     words.append(t.split())
     
