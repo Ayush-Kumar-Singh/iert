@@ -86,17 +86,7 @@ fig = px.pie(values=random_x, names=names,title=heading)
 
 st.plotly_chart(fig)
 
-# split() returns list of all the words in the string
-split_it = tcontent.split()
-  
-# Pass the split_it list to instance of Counter class.
-Counter = Counter(split_it)
-  
-# most_common() produces k frequently encountered
-# input values and their respective counts.
-most_occur = Counter.most_common(4)
-  
-print(most_occur)
+
 
 
 
@@ -112,6 +102,19 @@ month = 1
 yaxis = []
 posaxis = []
 nueaxis = []
+
+# split() returns list of all the words in the string
+
+split_it = tweets_df1["Text"].split()
+  
+# Pass the split_it list to instance of Counter class.
+Counter = Counter(split_it)
+  
+# most_common() produces k frequently encountered
+# input values and their respective counts.
+most_occur = Counter.most_common(4)
+  
+print(most_occur)
 
 
 while(month < 13):
